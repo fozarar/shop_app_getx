@@ -23,7 +23,6 @@ class ProductController extends GetxController {
       isLoading(false);
     } catch (e) {
       isLoading(false);
-      print(e.toString());
     }
   }
 }
