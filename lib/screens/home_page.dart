@@ -33,9 +33,9 @@ class HomePage extends StatelessWidget {
                   child: Text(
                     'ShopX',
                     style: TextStyle(
-                        fontFamily: 'avenir',
-                        fontSize: 32,
-                        fontWeight: FontWeight.w900),
+                      fontSize: 32,
+                      fontWeight: FontWeight.w900,
+                    ),
                   ),
                 ),
                 IconButton(
@@ -44,6 +44,21 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
+          Expanded(
+            child: AlignedGridView.count(
+              itemCount: 100,
+              mainAxisSpacing: 16,
+              crossAxisSpacing: 16,
+              crossAxisCount: 2,
+              itemBuilder: (context, index) {
+                return Container(
+                  height: 200,
+                  width: 100,
+                  color: Colors.red,
+                );
+              },
+            ),
+          )
         ],
       ),
     );
