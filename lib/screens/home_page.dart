@@ -1,12 +1,14 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        foregroundColor: Colors.black,
         backgroundColor: Colors.white,
         elevation: 0,
         leading: Icon(
@@ -41,7 +43,7 @@ class HomePage extends StatelessWidget {
                 IconButton(icon: Icon(Icons.grid_view), onPressed: () {}),
               ],
             ),
-          )
+          ),
         ],
       ),
     );
