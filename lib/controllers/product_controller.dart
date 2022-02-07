@@ -4,7 +4,9 @@ import 'package:shop_app_getx/services/remote_services.dart';
 
 class ProductController extends GetxController {
   var isLoading = true.obs;
-  var productList = <Product>[].obs;
+  var _productList = <Product>[].obs;
+
+  RxList<Product> get productList => _productList;
 
   @override
   void onInit() {
